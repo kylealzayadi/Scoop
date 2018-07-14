@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="kyle.start" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="kyler.start" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>scoop</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -92,4 +92,15 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <allow-navigation href="http://169.254.8.171:8100" />
+    <plugin name="cordova-plugin-ios-camera-permissions" spec="^1.2.0">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="your usage message" />
+        <variable name="MICROPHONE_USAGE_DESCRIPTION" value="your microphone usage message here" />
+        <variable name="PHOTOLIBRARY_ADD_USAGE_DESCRIPTION" value="your photo library usage message here" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="your photo library usage message here" />
+    </plugin>
+    <allow-navigation href="http://169.254.219.4:8100" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="browser" spec="5.0.3" />
 </widget>
