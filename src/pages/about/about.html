@@ -7,7 +7,6 @@
 </ion-header>
 
 <ion-content>
-  <img [src]="sanitizer.bypassSecurityTrustUrl(myphoto)" width="100px" height="100px">
-  <p>{{myphoto}}</p>
+  <img [src]="myphoto" width="100px" height="100px">
   <button  id="button1" ion-button full (click)="takePhoto()"> Take Photo</button>
 </ion-content>
