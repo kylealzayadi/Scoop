@@ -101,6 +101,8 @@
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="your photo library usage message here" />
     </plugin>
     <allow-navigation href="http://169.254.219.4:8100" />
-    <engine name="ios" spec="4.5.4" />
+    <allow-navigation href="http://169.254.66.46:8100" />
     <engine name="browser" spec="5.0.3" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
 </widget>

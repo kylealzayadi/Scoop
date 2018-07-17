@@ -1,12 +1,13 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="navColor">
     <ion-title>
       
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-<button  id="button1" ion-button full (click)="takePhoto()"> take photo</button>
-<p align="center"> <img src="{{ myphoto }}" alt=""> </p>
+<ion-content>
+  <img [src]="sanitizer.bypassSecurityTrustUrl(myphoto)" width="100px" height="100px">
+  <p>{{myphoto}}</p>
+  <button  id="button1" ion-button full (click)="takePhoto()"> Take Photo</button>
 </ion-content>
