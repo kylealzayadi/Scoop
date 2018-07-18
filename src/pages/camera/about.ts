@@ -19,6 +19,12 @@ export class AboutPage {
       encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.PICTURE
     }
+
+    
+  }
+
+  ionViewDidLoad() {
+    this.takePhoto();
   }
   takePhoto(){
   

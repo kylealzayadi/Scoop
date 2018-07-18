@@ -106,4 +106,15 @@
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="7.0.0" />
     <allow-navigation href="http://169.254.253.6:8100" />
+    <allow-navigation href="http://10.120.16.246:8100" />
+    <allow-navigation href="http://169.254.87.232:8100" />
+    <allow-navigation href="http://169.254.196.189:8100" />
+    <allow-navigation href="http://169.254.218.228:8100" />
+    <allow-navigation href="http://169.254.86.36:8100" />
+    <allow-navigation href="http://169.254.234.89:8100" />
+    <allow-navigation href="http://169.254.144.108:8100" />
+    <allow-navigation href="http://169.254.32.73:8100" />
+    <allow-navigation href="http://169.254.126.153:8100" />
+    <plugin name="cordova-plugin-qrscanner" spec="^2.6.0" />
+    <allow-navigation href="http://169.254.32.143:8100" />
 </widget>
