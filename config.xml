@@ -115,6 +115,15 @@
     <allow-navigation href="http://169.254.144.108:8100" />
     <allow-navigation href="http://169.254.32.73:8100" />
     <allow-navigation href="http://169.254.126.153:8100" />
-    <plugin name="cordova-plugin-qrscanner" spec="^2.6.0" />
     <allow-navigation href="http://169.254.32.143:8100" />
+    <plugin name="cordova-plugin-qrscanner" spec="^2.6.0" />
+    <allow-navigation href="http://169.254.191.116:8100" />
+    <allow-navigation href="http://169.254.5.202:8100" />
+    <allow-navigation href="http://169.254.56.223:8100" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="^8.0.0">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
+    </plugin>
+    <allow-navigation href="http://169.254.117.43:8100" />
+    <allow-navigation href="http://169.254.180.41:8100" />
+    <allow-navigation href="http://169.254.197.254:8100" />
 </widget>

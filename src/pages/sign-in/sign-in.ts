@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BarcodeScanner } from '../../../node_modules/@ionic-native/barcode-scanner';
 
 /**
  * Generated class for the SignInPage page.
@@ -14,10 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'sign-in.html',
 })
 export class SignInPage {
+  qrData= null;
+  createdCode=null;
+  scannedCode=null;
 
-  constructor(public navCtrl: NavController, ) {
+  constructor(private barcodeScanner: BarcodeScanner ) {
   }
+createCode(){
+  this.createdCode= this.qrData;
 
+}
+scanCode(){
+this.barcodeScanner.scan().then(barcodeData => {
+this.scannedCode=barcodeData.text;
+})
+}
   
 
 }

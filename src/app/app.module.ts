@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { GoogleMaps } from "@ionic-native/google-maps";
 import { Geolocation } from '@ionic-native/geolocation';
+import { NgxQRCodeModule} from 'ngx-qrcode2';
+import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 @NgModule({
   declarations: [
     MyApp,
@@ -21,10 +23,12 @@ import { Geolocation } from '@ionic-native/geolocation';
     HomePage,
     TabsPage,
     SignInPage,
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    NgxQRCodeModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -34,6 +38,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     HomePage,
     TabsPage,
     SignInPage,
+    
   ],
   providers: [
     GoogleMaps,
@@ -41,6 +46,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     SplashScreen,
     Geolocation,
     Camera,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
