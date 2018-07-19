@@ -117,4 +117,9 @@
     <allow-navigation href="http://169.254.126.153:8100" />
     <plugin name="cordova-plugin-qrscanner" spec="^2.6.0" />
     <allow-navigation href="http://169.254.32.143:8100" />
+    <allow-navigation href="http://169.254.66.117:8100" />
+    <allow-navigation href="http://169.254.1.16:8100" />
+    <allow-navigation href="http://169.254.250.49:8100" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
+    <plugin name="cordova-plugin-file" spec="^6.0.1" />
 </widget>

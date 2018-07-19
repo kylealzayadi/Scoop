@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Loading } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { DomSanitizer } from '@angular/platform-browser';
 import { normalizeURL } from 'ionic-angular';
@@ -24,7 +24,7 @@ export class AboutPage {
   }
 
   ionViewDidLoad() {
-    this.takePhoto();
+    this.takePhoto
   }
   takePhoto(){
   

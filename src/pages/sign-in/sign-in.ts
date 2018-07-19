@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -12,9 +12,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-sign-in',
   templateUrl: 'sign-in.html',
+  
 })
 export class SignInPage {
-
+  
   constructor(public navCtrl: NavController, ) {
   }
 
