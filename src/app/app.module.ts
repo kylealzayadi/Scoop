@@ -3,10 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/camera/about';
 import { ContactPage } from '../pages/progress/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+
 import { Camera } from '@ionic-native/camera';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,14 +14,18 @@ import { GoogleMaps } from "@ionic-native/google-maps";
 import { Geolocation } from '@ionic-native/geolocation';
 import { NgxQRCodeModule} from 'ngx-qrcode2';
 import {BarcodeScanner} from '@ionic-native/barcode-scanner';
+import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
+import { TabsPage } from '../pages/tabs/tabs';
+import {LoginPage} from '../pages/login/login';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
     SignInPage,
+    ProgressBarComponent,
+    LoginPage,
+    TabsPage,
     
   ],
   imports: [
@@ -33,11 +36,11 @@ import {BarcodeScanner} from '@ionic-native/barcode-scanner';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
     SignInPage,
+   TabsPage,
+   LoginPage,
     
   ],
   providers: [

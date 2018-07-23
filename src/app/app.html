@@ -1,1 +1,32 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+<ion-content padding class="sidenav">
+   <ion-navbar>
+
+   <ion-title id="1">
+        MENU
+    </ion-title>
+</ion-navbar> 
+    <ion-title id="2">
+        PROFILE
+    </ion-title>
+    <ion-title id="3">
+            PAYMENT METHODS
+        </ion-title>
+        <ion-title id="4">
+                HISTORY
+            </ion-title>
+            <ion-title id="5">
+                    HOW TO USE
+                </ion-title>
+</ion-content>
+</ion-menu>
+
+
+
+
+
+
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>

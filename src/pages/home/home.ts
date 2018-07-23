@@ -9,8 +9,10 @@ import {
   BaseArrayClass
 } from '@ionic-native/google-maps';
 import { Platform } from 'ionic-angular';
-import { Component } from "@angular/core/";
+import { Component,  } from "@angular/core/";
 import { Geolocation } from '@ionic-native/geolocation';
+
+
 
 @Component({
   selector: 'page-home',
@@ -22,11 +24,15 @@ export class HomePage {
   lat;
   long;
 
+
   constructor(public platform: Platform, private geolocation: Geolocation) {
     platform.ready().then(() => {
       console.log('loading map')
       this.loadMap();
     });
+    
+    
+    
   }
 
 
@@ -80,7 +86,41 @@ export class HomePage {
           zoom: 18,
           tilt: 30,
 
-        }
+        },
+        styles: [
+          {
+            featureType: "road",
+            elementType: "geometry",
+            stylers: [
+              { saturation: -100 },
+              { visibility: "simplified" }
+            ]
+          },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "transit",
+            elementType: "all",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "landscape",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          }
+        ]
       }
 
       // create the map
@@ -93,6 +133,7 @@ export class HomePage {
         data.disableAutoPan = true;
         let marker: Marker = this.map.addMarkerSync(data);
 
+       
       })
       
     });
