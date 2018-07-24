@@ -15,11 +15,35 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
- .sidenav ion-title{
+.spacing {
+    margin-top: 60px;
+    text-align: left;
+    
+}
 
-padding: 30px 50px 60px 80px;
+#pm{
+    height: 40px;
+    width: 40px;
+}
+#hy{
+    height: 40px;
+    width: 40px;
+}
+#qm{
+    height: 40px;
+    width: 40px;
+}
+#pi{
+    height: 40px;
+    width: 40px;
+}
+#hi{
+    height: 30px;
+    width: 30px;
 
-margin-right: 60px;
 
- }
- 
+}
+#yt{
+    background: transparent;
+    font-size: 22px;
+}

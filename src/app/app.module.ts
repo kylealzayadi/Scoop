@@ -54,3 +54,4 @@ import {LoginPage} from '../pages/login/login';
   ]
 })
 export class AppModule {}
+
