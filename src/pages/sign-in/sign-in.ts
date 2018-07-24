@@ -30,6 +30,9 @@ this.barcodeScanner.scan().then(barcodeData => {
 this.scannedCode=barcodeData.text;
 })
 }
+ionViewDidLoad() {
+  this.scanCode();
   
 
+}
 }
