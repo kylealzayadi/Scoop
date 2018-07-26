@@ -1,24 +1,30 @@
 <ion-header>
-  <ion-navbar color="navColor">
+  <ion-navbar>
       <ion-buttons start>
           <button ion-button icon-only menuToggle>
             <ion-icon name="menu"></ion-icon>
           </button>
         </ion-buttons>
     <ion-title id="title">
-      PROGRESS
+      Progress
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
  
-  <img id="coin" src="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/7b/68/44/7b684435-3431-c4b5-b9e8-1ac9fa49b321/AppIcon-1x_U007emarketing-85-220-0-3.jpeg/246x0w.jpg" alt="smiley.gif" >
+  <img id="coin" src="../../assets/imgs/APP Logo.png">
   
   <div class="progress-outer">
       <div class="progress-inner" [style.width]="progress + '%'">
           {{100}}%
       </div>
-      
+      <div>
+<ul *ngFor="let p of pictures">
+    <img id="pics" src="{{p}}" width="100px" height="100px">
+    
+</ul>
+      </div>
   </div>
+  
 </ion-content>

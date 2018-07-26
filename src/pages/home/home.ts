@@ -9,7 +9,7 @@ import {
   BaseArrayClass
 } from '@ionic-native/google-maps';
 import { Platform } from 'ionic-angular';
-import { Component,  } from "@angular/core/";
+import { Component, } from "@angular/core/";
 import { Geolocation } from '@ionic-native/geolocation';
 
 
@@ -30,9 +30,9 @@ export class HomePage {
       console.log('loading map')
       this.loadMap();
     });
-    
-    
-    
+
+
+
   }
 
 
@@ -48,7 +48,7 @@ export class HomePage {
     this.geolocation.getCurrentPosition(options).then((resp) => {
       this.lat = +resp.coords.latitude;
       this.long = +resp.coords.longitude;
-        var Image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+      var Image = 'http://maps.google.com/mapfiles/kml/shapes/arrow.png';
       let MARKERS: BaseArrayClass<any> = new BaseArrayClass<any>([
         //UCLA
         {
@@ -75,7 +75,7 @@ export class HomePage {
           position: { lat: 34.096271, lng: -118.314839 },
         }
       ])
-        
+
       // where to load the map and how zommed in
       let mapOptions: GoogleMapOptions = {
         camera: {
@@ -85,7 +85,6 @@ export class HomePage {
           },
           zoom: 18,
           tilt: 30,
-
         },
         styles: [
           {
@@ -95,25 +94,25 @@ export class HomePage {
               { saturation: -100 },
               { visibility: "simplified" }
             ]
-          },{
+          }, {
             featureType: "road",
             elementType: "labels",
             stylers: [
               { visibility: "off" }
             ]
-          },{
+          }, {
             featureType: "transit",
             elementType: "all",
             stylers: [
               { visibility: "off" }
             ]
-          },{
+          }, {
             featureType: "poi",
             elementType: "labels",
             stylers: [
               { visibility: "off" }
             ]
-          },{
+          }, {
             featureType: "landscape",
             elementType: "labels",
             stylers: [
@@ -125,17 +124,16 @@ export class HomePage {
 
       // create the map
       this.map = GoogleMaps.create('map_canvas', mapOptions);
-      
+
 
 
       // add the markers
       MARKERS.forEach((data: any) => {
         data.disableAutoPan = true;
         let marker: Marker = this.map.addMarkerSync(data);
-
-       
       })
       
+
     });
   }
 

@@ -6,13 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar color="navColor">
-      <ion-buttons start>
-          <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-          </button>
-        </ion-buttons>
-    <ion-title>QR CODE</ion-title>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>QR Code</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,19 +20,28 @@
 
 <ion-content padding>
   <ion-item>
-  <ion-input type="text" placeholder="My QR data" [(ngModel)]="qrData">
+    <ion-input type="text" placeholder="My QR data" [(ngModel)]="qrData">
 
-  </ion-input>
-</ion-item>
-  <button ion-button full icon-left (click)="createCode()"><ion-icon name="barcode"> Create Code</ion-icon></button>
-  <button ion-button full icon-left (click)="scanCode()"><ion-icon name="qr-scanner"> Scan Code</ion-icon></button>
+    </ion-input>
+  </ion-item>
+  <button ion-button full icon-left (click)="createCode()">
+    <ion-icon name="barcode"> Create Code</ion-icon>
+  </button>
+  <button ion-button full icon-left (click)="scanCode()">
+    <ion-icon name="qr-scanner"> Scan Code</ion-icon>
+  </button>
+  <button ion-button full icon-left (click)="takePhoto()">
+      <ion-icon name="barcode"> Take Picture</ion-icon>
+    </button>
+    
+  <!-- <img src="{{img}}"> -->
   <ion-card *ngIf="createdCode">
- <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
- <ion-card-content>
-   <p>
-     Value: {{createcode}}
-   </p>
-  </ion-card-content>
+    <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+    <ion-card-content>
+      <p>
+        Value: {{createcode}}
+      </p>
+    </ion-card-content>
   </ion-card>
   <ion-card *ngIf="scannedCode">
     <ion-card-content>

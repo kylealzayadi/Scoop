@@ -132,4 +132,10 @@
     <allow-navigation href="http://169.254.71.107:8100" />
     <allow-navigation href="http://172.20.10.3:8100" />
     <allow-navigation href="http://192.168.1.8:8100" />
+    <allow-navigation href="http://169.254.123.219:8100" />
+    <allow-navigation href="http://169.254.174.110:8100" />
+    <plugin name="com.darktalker.cordova.screenshot" spec="^0.1.6" />
+    <allow-navigation href="http://169.254.206.64:8100" />
+    <allow-navigation href="http://169.254.221.84:8100" />
+    <allow-navigation href="http://169.254.178.69:8100" />
 </widget>

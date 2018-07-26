@@ -2,7 +2,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
 import { ContactPage } from '../pages/progress/contact';
 import { HomePage } from '../pages/home/home';
 
@@ -17,6 +16,14 @@ import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { TabsPage } from '../pages/tabs/tabs';
 import {LoginPage} from '../pages/login/login';
+import { HistoryPage } from '../pages/history/history';
+import {PaymentPage} from '../pages/payment/payment'
+import {ProfilePage} from '../pages/profile/profile'
+import {HowtousePage} from '../pages/howtouse/howtouse'
+import { NavController } from 'ionic-angular';
+import { Screenshot } from '../../node_modules/@ionic-native/screenshot';
+import { DatabaseProvider } from '../providers/database/database';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,12 +33,17 @@ import {LoginPage} from '../pages/login/login';
     ProgressBarComponent,
     LoginPage,
     TabsPage,
+    HistoryPage,
+    HowtousePage,
+    ProfilePage,
+    PaymentPage
     
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     NgxQRCodeModule,
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,6 +53,10 @@ import {LoginPage} from '../pages/login/login';
     SignInPage,
    TabsPage,
    LoginPage,
+   HistoryPage,
+   HowtousePage,
+   ProfilePage,
+   PaymentPage
     
   ],
   providers: [
@@ -50,8 +66,11 @@ import {LoginPage} from '../pages/login/login';
     Geolocation,
     Camera,
     BarcodeScanner,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    Screenshot,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DatabaseProvider
   ]
 })
 export class AppModule {}
+
 

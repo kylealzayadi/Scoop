@@ -1,37 +1,53 @@
 <ion-menu [content]="content">
 
-    <ion-content padding>
-            <div class="spacing">
-                    <img id="hi" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-fill-circle-512.png"> 
-            <button id="yt"  ion-button color="light" onclick="myFunction"> 
-                     
-                    PROFILE
-            </button>
-        </div>
-        <div class="spacing">
-                <img id="hi" src="https://image.flaticon.com/icons/png/512/14/14281.png"> 
-        <button id="yt"  ion-button color="light" onclick="myFunction"> 
-                 
-                PAYMENT METHODS
-        </button>
-    </div>
-    <div class="spacing">
-            <img id="hi" src="https://www.shareicon.net/download/2016/11/14/852469_history.svg"> 
-    <button id="yt"  ion-button color="light" onclick="myFunction"> 
-             
-            HISTORY
-    </button>
-</div>   
-    
-        <div class="spacing">
-                <img id="hi" src="https://cdn2.iconfinder.com/data/icons/pictograms-3/512/25-512.png"> 
-        <button id="yt"  ion-button color="light" onclick="myFunction()"> 
-                 
-                HOW TO USE
-        </button>
-    </div>
+        <ion-content padding>
+                <div class="spacing">
+                        <div class="img">
+                                <img class="icon-center" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-fill-circle-512.png">
+                        </div>
+                        <div class="content">
+                                <button (click)="toProfile()" id="yt" ion-button color="light">
 
-    </ion-content>
+                                        PROFILE
+                                </button>
+                        </div>
+                </div>
+                <div class="spacing">
+                        <div class="img">
+                                <img class="icon-center" src="https://image.flaticon.com/icons/png/512/14/14281.png">
+                        </div>
+                        <div class="content">
+                                <button (click)="toPayment()" id="yt" ion-button color="light">
+
+                                        PAYMENT
+                                </button>
+                        </div>
+                </div>
+                <div class="spacing">
+                        <div class="img">
+                                <img class="icon-center" src="https://www.shareicon.net/download/2016/11/14/852469_history.svg">
+                        </div>
+                        <div class="content">
+                                <button (click)="toHistory()" id="yt" ion-button color="light">
+
+                                        HISTORY
+                                </button>
+                        </div>
+                </div>
+
+                <div class="spacing">
+                        <div class="img">
+                                <img class="icon-center" src="https://cdn2.iconfinder.com/data/icons/pictograms-3/512/25-512.png">
+                        </div>
+                        <div class="content">
+                                <button (click)="toHowtouse()" id="yt" ion-button color="light">
+
+                                        HOW TO USE
+                                </button>
+                        </div>
+                </div>
+
+        </ion-content>
 </ion-menu>
 
 

@@ -5,7 +5,8 @@ page-contact {
     #coin{
         position: absolute;
         margin: auto;
-    width: 50%;
+        height: 200px;
+    width: 200px;
    right: 105px;
    top: 35px;
     }
@@ -19,7 +20,7 @@ page-contact {
         color: #fff;
         border-radius: 20px;
         position: fixed;
-        top: 400px;
+        top: 300px;
     }
  
     .progress-inner {
@@ -29,6 +30,11 @@ page-contact {
         padding: 5px;
         border-radius: 20px;
         background-color: map-get($colors, primary);
+    }
+    #pics{
+        display: block;
+        float: left;
+        margin-right: 5px;
     }
 }
 
