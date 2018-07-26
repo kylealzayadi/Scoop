@@ -3,7 +3,7 @@
     <name>scoop</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://172.20.10.4:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -102,9 +102,6 @@
     </plugin>
     <allow-navigation href="http://169.254.219.4:8100" />
     <allow-navigation href="http://169.254.66.46:8100" />
-    <engine name="browser" spec="5.0.3" />
-    <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="7.0.0" />
     <allow-navigation href="http://169.254.253.6:8100" />
     <allow-navigation href="http://10.120.16.246:8100" />
     <allow-navigation href="http://169.254.87.232:8100" />
@@ -122,4 +119,7 @@
     <allow-navigation href="http://169.254.250.49:8100" />
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
+    <engine name="browser" spec="5.0.3" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
 </widget>
